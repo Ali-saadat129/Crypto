@@ -1,7 +1,10 @@
 .footerContainer {
     background-color: white;
-    width: 90%;
-    display: block;
+    width: 100%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     height: 95%;
     border-radius:12px;
@@ -9,12 +12,28 @@
     -moz-border-radius:12px;
     -ms-border-radius:12px;
     -o-border-radius:12px;
+
 }
 .footerContainer ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin-right: 10%;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+
 }
 .footerContainer ul li {
     list-style-type: none;
 }
+.footerContainer ul li:hover{
+    color: #4464f6  ;
+}
+
+.footerContainer ul li.active {
+    color: #4464f6  ;
+
+}
+

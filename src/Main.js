@@ -12,7 +12,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 // components 
 import Footer from './components/Footer';
-
+import Homepage from './components/Homepage';
 // css
 import Styles from "./styles/Main.module.css"
 
@@ -32,7 +32,9 @@ const Main = () => {
 
     return (
         <div className={Styles.mainContainer} >
-
+            <div className={Styles.Homepage}>
+                <Homepage />
+            </div>
             <div className={Styles.footer}>
                 <Footer />
             </div>

@@ -14,10 +14,10 @@ const Footer = () => {
     return (
         <div className={Styles.footerContainer}>
             <ul>
-            <li><FontAwesomeIcon icon={faHouse} /></li>
-            <li><FontAwesomeIcon icon={faSearch} /></li>
-            <li><FontAwesomeIcon icon={faChartLine} /></li>
-            <li><FontAwesomeIcon icon={faUser} /></li>
+                <li><FontAwesomeIcon icon={faHouse} /></li>
+                <li><FontAwesomeIcon icon={faSearch} /></li>
+                <li><FontAwesomeIcon icon={faChartLine} /></li>
+                <li><FontAwesomeIcon icon={faUser} /></li>
             </ul>
         </div>
     );

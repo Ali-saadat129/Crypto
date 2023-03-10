@@ -6,11 +6,12 @@
     align-items: center;
     height: 75vh;
     width: 25vw;
-    border: 1px solid black ;
+
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     -ms-border-radius: 45px;
     -o-border-radius: 45px;
-    background-color: #0D1B2A ;
+    background-color: #040B25 ;
+    overflow: hidden;
 }
