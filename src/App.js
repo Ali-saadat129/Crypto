@@ -1,9 +1,11 @@
-
+import Main from "./Main";
+// styles
+import Styles from "./styles/App.module.css"
 
 function App() {
   return (
-    <div className="App">
-   test
+    <div className={Styles.App}>
+      <Main />
     </div>
   );
 }
