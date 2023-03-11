@@ -33,7 +33,7 @@ const Main = () => {
     return (
         <div className={Styles.mainContainer} >
             <div className={Styles.Homepage}>
-                <Homepage />
+                <Homepage apiData={cryptoData} />
             </div>
             <div className={Styles.footer}>
                 <Footer />

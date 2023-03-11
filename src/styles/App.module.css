@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 83vh;
     width: 25vw;
 
     border-radius: 45px;
@@ -12,6 +12,6 @@
     -moz-border-radius: 45px;
     -ms-border-radius: 45px;
     -o-border-radius: 45px;
-    background-color: #040B25 ;
+    background-color: rgb(80,92,254) ;
     overflow: hidden;
 }

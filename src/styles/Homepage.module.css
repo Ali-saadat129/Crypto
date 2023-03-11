@@ -59,3 +59,17 @@
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+.ourMoney div {
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourMoney div p ,
+.ourMoney div h2 ,
+.ourMoney div h5{
+    margin: 0;
+    padding: 0;
+
+}

@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 95%;
+    height: 65%;
     border-radius:12px;
     -webkit-border-radius:12px;
     -moz-border-radius:12px;
@@ -22,7 +22,7 @@
     text-align: center;
     margin-right: 10%;
     box-sizing: border-box;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
 }
 .footerContainer ul li {
