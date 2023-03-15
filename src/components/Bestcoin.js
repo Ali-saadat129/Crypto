@@ -19,8 +19,7 @@ const Bestcoin = ({BestCoin}) => {
                 <p>{BestCoin.name}</p>
             </div>
             <div className={Styles.downpart}>
-                <p>{BestCoin.value}</p>
-                <span><FontAwesomeIcon style={{color:"#0af731" , width:"1rem" , height:"1rem"}} icon={faUpLong} />%{BestCoin.valueChange}</span>
+                <p> Value : {BestCoin.value}$</p>
             </div>
         </div>
     );

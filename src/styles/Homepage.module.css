@@ -73,15 +73,17 @@
 
 }
 .bestcoins {
-    overflow: scroll;
-    width: 90%;
+    overflow-x: scroll;
+    width: 95%;
     height: fit-content;
     display: flex;
+    scroll-snap-type: x mandatory;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0px 10px;
     /* flex-wrap: wrap ; */
+
 }
 ::-webkit-scrollbar {
     width: 100%;
