@@ -9,14 +9,18 @@ import { faUpLong } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 // components 
 import Bestcoin from './Bestcoin';
-
+// photoes
 import UserPhoto from "../images/UserPhoto.png"
+// bootstrap 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 const Homepage = ({apiData}) => {
 
     const data = []
     apiData.forEach(element => {
-        data.push({"value" : element.market_cap_change_percentage_24h , "name" : element.symbol.toUpperCase() , "image" : element.image})
+        data.push({"valueChange" : element.market_cap_change_percentage_24h , "value" : element.current_price,"name" : element.symbol.toUpperCase() , "image" : element.image})
         
     });
 
@@ -32,7 +36,7 @@ const Homepage = ({apiData}) => {
       data.reverse()
 
 
-      const bestCoin = data.slice(0,10)
+      const bestCoin = data.slice(0,5)
 
       console.log(bestCoin)
 
@@ -61,13 +65,12 @@ const Homepage = ({apiData}) => {
 
             </div>
 
+                <h4>Top 5 best</h4>
             <div className={Styles.bestcoins}>
-                <h4>The most profitable coins</h4>
-                <div >
-                    {bestCoin.map(coin => <Bestcoin BestCoin={coin} ></Bestcoin>)}
-                </div>
+                
+                    {bestCoin.map(coin => <Bestcoin key={coin} BestCoin={coin} ></Bestcoin>)}
+                
             </div>
-
             <div className={Styles.worstcoins}>
 
             </div>

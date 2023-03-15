@@ -1,20 +1,55 @@
 .bestContainer{
-    width: 10rem;
-    height: 10rem;
+    width: 20%;
+    height: 10vh;
     color: white;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     border: 1px solid black;
-    overflow: scroll;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
 }
 
 .bestContainer .topper {
     margin: 0;
     padding: 0;
-}
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
+.bestContainer .topper p {
+    font-size: 0.7rem;
+}
 
 .bestContainer .topper img {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
+.bestContainer .downpart {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.bestContainer .downpart p {
+    font-size: 0.6rem;
+
+}
+.bestContainer .downpart span {
+    font-size: 0.5rem;
+} 
+
+/* ::-webkit-scrollbar {
+    width: 100%;
+    background: transparent; 
+    } */
