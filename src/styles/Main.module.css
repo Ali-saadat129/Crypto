@@ -6,6 +6,8 @@
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: #121212;
+
 }
 
 .Homepage{
@@ -20,5 +22,5 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 7px;
 }

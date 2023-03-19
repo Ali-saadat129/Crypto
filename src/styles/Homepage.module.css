@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    padding-top: 15px;
 }
 .header{
     display: flex;
@@ -89,3 +90,23 @@
     width: 100%;
     background: transparent; 
     }
+
+
+
+.homeContainer .bestheader { 
+    color: white;
+    margin-top: 6px;
+}
+
+.worstcoins{
+    overflow-x: scroll;
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+

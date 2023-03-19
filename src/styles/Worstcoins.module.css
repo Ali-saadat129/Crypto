@@ -4,9 +4,9 @@
   }
 
 
-.bestContainer{
-    width: 100px;
-    /* height: ; */
+.worstContainer{
+    width: 25%;
+    /* height: 15vh; */
     color: white;
     padding: 5px;
     margin: 5px;
@@ -21,7 +21,7 @@
     color: white;
 }
 
-.bestContainer .topper {
+.worstContainer .topper {
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,13 +29,13 @@
     /* align-items: center; */
 
 }
-.bestContainer .topper p {
+.worstContainer .topper p {
     font-size: 0.7rem;
     font-family: RobotoSlab;
 
 }
 
-.bestContainer .topper img {
+.worstContainer .topper img {
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
@@ -44,7 +44,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.bestContainer .downpart {
+.worstContainer .downpart {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -52,11 +52,11 @@
     padding: 2px;
 }
 
-.bestContainer .downpart p {
+.worstContainer .downpart p {
     font-size: 0.6rem;
     margin: 0;
 }
-.bestContainer .downpart span {
+.worstContainer .downpart span {
     font-size: 0.5rem;
 } 
 
