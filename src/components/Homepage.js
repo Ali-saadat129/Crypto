@@ -41,7 +41,8 @@ const Homepage = ({apiData}) => {
       data.reverse()
 
       const worstcoins = data.slice(0,4)
-      console.log(worstcoins)
+
+
     return (
         <div className={`  ${Styles.homeContainer}`}>
 

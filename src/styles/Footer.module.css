@@ -1,5 +1,5 @@
 .footerContainer {
-    background-color: #23242A;
+    background-color: white;
     width: 100%;
     right: 5%;
     /* display: flex;
@@ -13,16 +13,16 @@
     -ms-border-radius:12px;
     -o-border-radius:12px;
     border: 0.5px solid white;
-    color: white;
+    color: #23242A;
 
 }
 .footerContainer ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    margin-right: 10%;
+    padding-right: 10%;
     box-sizing: border-box;
     font-size: 1.2rem;
 
