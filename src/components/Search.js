@@ -1,6 +1,7 @@
 import React from 'react';
 // css
 import Styles from "../styles/Search.module.css"
+
 // Hooks
 import { useState } from 'react';
 // bootstrap 
@@ -10,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // components
 import Crypto from './Crypto'; 
-
+import Footer from "./Footer"
 
 const Search = ({cryptoData}) => {
 
@@ -35,15 +36,17 @@ const Search = ({cryptoData}) => {
                     <input type='text' onKeyPress={handleKeyPress} value={tempstate} onChange={inputHandler} className={` form-control`}   placeholder="Press enter " aria-label="Username" aria-describedby="basic-addon1"></input>
                 </div>
             </div>
-            <h2>
+            <h2 >
                 Market
             </h2>
-            <div>
-                {Data.map(coin => <Crypto data={coin}></Crypto>)}
+            <div className={Styles.coinchart}>
+                {Data.map(coin => <Crypto key={coin.name}  data={coin}></Crypto>)}
             </div>
 
+            <div className={Styles.footer}>
 
-
+            <Footer />
+            </div>
         </div>
     );
 };

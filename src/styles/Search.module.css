@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     overflow-y: scroll;
-    padding: 20px;
+    padding: 20px 10px;
     box-sizing: border-box;
 }
 
@@ -41,7 +41,20 @@
     justify-content: space-between;
 }
 
-
+.coinchart{
+    width: 100%;
+    height: 80%;
+    
+}
+h2{
+    color: white;
+}
+.footer {
+    width: 60%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+}
 
 
 
@@ -54,7 +67,10 @@
   
 
     }
-  
+    .footer {
+        width: 97%;
+        bottom: -30px;
+    }
        
 
 }
@@ -62,28 +78,40 @@
 
        
        .Container .Footersearch   input {
-        width: 60%;
+        width: 60% !important;
      
 
     }
-
+    .footer {
+        width: 75%;
+        bottom: 17px;
+    }
+       
 }
 
 @media only screen and (min-width: 768px) {
  
     .Container .Footersearch   input {
-        width: 35%;
+        width: 35% !important;
 
 
     }
+    .footer {
+        width: 47%;
+        bottom: 45px;
+    }
+       
 }
 @media only screen and (min-width: 962px) {
     .Container .Footersearch   input {
-        width: 24%;
+        width: 24% !important;
 
 
     }
-
+    .footer {
+        width: 47%;
+        bottom: 45px;
+    }
 }
 @media only screen and (min-width: 1140px) {
  

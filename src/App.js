@@ -36,7 +36,6 @@ function App() {
         <Routes>
           <Route path="/homepage" element={<Main  cryptoData={cryptoData}   />} />
           <Route path="/" element={<Search  cryptoData={cryptoData}   />} />
-
         </Routes>
       </div>
 
