@@ -6,8 +6,11 @@
 
 .bestContainer{
     width: 25%;
-    /* height: ; */
-    color: white;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    color: white;
     padding: 5px;
     margin: 5px;
     scroll-snap-align: start ;

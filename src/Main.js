@@ -1,10 +1,6 @@
 import React from 'react';
 
-// Api
-import { getData } from './Api/Api';
-// Hooks 
-import { useEffect } from 'react';
-import { useState } from 'react';
+
 
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,17 +12,8 @@ import Homepage from './components/Homepage';
 // css
 import Styles from "./styles/Main.module.css"
 
-const Main = () => {
+const Main = ({cryptoData}) => {
 
-    const [cryptoData , setCryptoData] = useState([])
-
-    useEffect(() => {
-        const dataResive = async  () => {
-            const data = await getData()
-            setCryptoData(data)
-        }
-        dataResive()
-    },[])
 
     
 

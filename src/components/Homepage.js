@@ -26,16 +26,15 @@ const Homepage = ({apiData}) => {
     });
 
     data.sort((a, b) => {
-        if (a.value < b.value) {
+        if (a.valueChange < b.valueChange) {
           return -1;
         }
-        if (a.value > b.value) {
+        if (a.valueChange > b.valueChange) {
           return 1;
         }
         return 0;
       });
       data.reverse()
-
 
       const bestCoin = data.slice(0,4)
       data.reverse()
