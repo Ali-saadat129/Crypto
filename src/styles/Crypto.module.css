@@ -1,0 +1,21 @@
+.coincontainer{
+    border: 0.5px solid white;
+    margin: 5px;
+    padding: 4px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.coincontainer .row img {
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    max-height: 80%;
+}

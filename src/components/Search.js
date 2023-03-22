@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // components
-// import Crypto from './crypto';
+import Crypto from './Crypto'; 
 
 
 const Search = ({cryptoData}) => {
@@ -21,25 +21,29 @@ const Search = ({cryptoData}) => {
         settemp(event.target.value)
     }
     const Data = cryptoData
-    console.log(cryptoData)
+    
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+          console.log('Enter key pressed');
+        }
+      }
     
     return (
         <div className={`container ${Styles.Container}`}>
+            <div className={`input-group mb-3 ${Styles.Footersearch}`}>
+                <div className={`${Styles.button}`}>
+                    <input type='text' onKeyPress={handleKeyPress} value={tempstate} onChange={inputHandler} className={` form-control`}   placeholder="Press enter " aria-label="Username" aria-describedby="basic-addon1"></input>
+                </div>
+            </div>
             <h2>
                 Market
             </h2>
             <div>
-
+                {Data.map(coin => <Crypto data={coin}></Crypto>)}
             </div>
 
 
 
-            <div className={`input-group mb-3 ${Styles.Footersearch}`}>
-                <div className="input-group-prepend">
-                    <button className={`btn btn-primary`}><FontAwesomeIcon className={`input-group-text bg-primary ${Styles.searchbutton}`} icon={faSearch} /></button>
-                </div>
-                <input type='text' value={tempstate} onChange={inputHandler} className={` form-control`}   placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1"></input>
-            </div>
         </div>
     );
 };
