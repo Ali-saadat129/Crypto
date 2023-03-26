@@ -69,7 +69,7 @@ h2{
     }
     .footer {
         width: 97%;
-        bottom: -30px;
+        bottom: -20px;
     }
        
 
@@ -109,13 +109,13 @@ h2{
 
     }
     .footer {
-        width: 47%;
-        bottom: 45px;
+        width: 33%;
+        bottom: 65px;
     }
 }
 @media only screen and (min-width: 1140px) {
  
-
+/* still nothing  */
 }
 
 

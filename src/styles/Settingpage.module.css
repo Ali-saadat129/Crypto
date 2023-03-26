@@ -1,0 +1,91 @@
+.containerSetting {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 20px;
+    color: white;
+    overflow:scroll;
+}
+.containerSetting .headersett{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.containerSetting .headersett a {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+.containerSetting .headersett a:hover {
+    color: skyblue;
+}
+
+.containerSetting .userinfo img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+
+}
+.accordion{
+    width: 100%;
+    margin-top:3rem;
+}
+.accordion .accordionItem{
+    margin-bottom: 1.5rem;
+}
+.accordionItem .accordionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.accordionHeader div span {
+    margin-left: 5px;
+}
+.accordion .accordionContext button{
+    padding: 2px;
+    font-size: 0.7rem;
+    display: flex;
+}
+.accordion .accordionContext{
+    display: none;
+}
+
+
+.accordionContext {
+    animation-name: fadein;
+    animation-duration: 0.7s;
+}
+  
+@keyframes fadein {
+    from {
+      opacity: 0;
+      max-height: 0;
+      transform: translateY(-50px);
+      -webkit-transform: translateY(-50px);
+      -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+      -o-transform: translateY(-50px);
+}
+    to {
+      opacity: 1;
+      max-height: 500px;
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+}
+}

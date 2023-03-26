@@ -2,6 +2,7 @@
 // components
 import Main from "./Main";
 import Search from "./components/Search";
+import Settingpage from "./components/Settingpage";
 // styles
 import Styles from "./styles/App.module.css"
 // Api
@@ -34,8 +35,10 @@ function App() {
   return (
       <div className={Styles.App}>
         <Routes>
-          <Route path="/homepage" element={<Main  cryptoData={cryptoData}   />} />
-          <Route path="/" element={<Search  cryptoData={cryptoData}   />} />
+          <Route path="/" element={<Main  cryptoData={cryptoData}   />} />
+          <Route path="/searchpage" element={<Search  cryptoData={cryptoData}   />} />
+          <Route path="/Settingpage" element={<Settingpage     />} />
+
         </Routes>
       </div>
 
