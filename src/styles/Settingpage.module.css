@@ -87,5 +87,19 @@
       -moz-transform: translateY(0);
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
+    }
 }
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+.aboutus a {
+    color: white;
+    margin-right: 20%;
+    font-size: 1.6rem;
+}
+.aboutus a:hover{
+    color: skyblue;
 }

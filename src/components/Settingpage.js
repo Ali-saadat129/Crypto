@@ -1,7 +1,8 @@
 import React from 'react';
 
-// router
+// router and hooks
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 // css
 import Styles from "../styles/Settingpage.module.css"
 // icons
@@ -15,7 +16,8 @@ import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { faQuestion } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 // user image
 import userpic from "../images/usersett.png"
 // bootstrap
@@ -25,21 +27,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Settingpage = () => {
 
     // accordion js code
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
-    // show accordion context 
-    accordionHeaders.forEach((header) => {
-        header.addEventListener("click", () => {
-      
-          const accordionContent = header.nextElementSibling;
+    useEffect(() => {
 
-          if (accordionContent.style.display === "block") {
-            accordionContent.style.display = "none";
-          } else {
-            accordionContent.style.display = "block";
-          }
+        
+        const accordionHeaders = document.querySelectorAll(".accordion-header");
+        // show accordion context 
+        accordionHeaders.forEach((header) => {
+            header.addEventListener("click", () => {
+        
+            const accordionContent = header.nextElementSibling;
+
+            if (accordionContent.style.display === "block") {
+                accordionContent.style.display = "none";
+            } else {
+                accordionContent.style.display = "block";
+            }
+            });
         });
-      });
-
+    })
 
 
     return (
@@ -49,7 +54,7 @@ const Settingpage = () => {
                 <h3>Setting</h3>
             </div>
             <div className={`row ${Styles.userinfo}`}>
-                <img src={userpic} className={`col-3`}></img>
+                <img  alt='usephoto' src={userpic} className={`col-3`}></img>
                 <div className={`col-9  `}>
                     <h5>Ali Saadat</h5>
                     <p>alisaadat129@gmail.com</p>
@@ -105,9 +110,11 @@ const Settingpage = () => {
                     <div className={``}><FontAwesomeIcon icon={faQuestion} /><span>about us</span></div>
                         <FontAwesomeIcon icon={faCircleDown} />
                     </div>
-                    <div className={`${Styles.accordionContext}`}>
-                    {/* <FontAwesomeIcon icon={faInstagram} /> */}
-                        ab
+                    <div className={`${Styles.accordionContext} ${Styles.aboutus}`}>
+                        <Link to="#"><FontAwesomeIcon icon={faInstagram} /></Link>
+                        <Link to="#"><FontAwesomeIcon icon={faTwitter} /></Link>
+                        <Link to="#"><FontAwesomeIcon icon={faGithub} /></Link>
+
                     </div>
                 </div>
 
