@@ -3,6 +3,7 @@
 import Main from "./Main";
 import Search from "./components/Search";
 import Settingpage from "./components/Settingpage";
+import Loading from "./components/Loading";
 // styles
 import Styles from "./styles/App.module.css"
 // Api
@@ -34,12 +35,14 @@ function App() {
 
   return (
       <div className={Styles.App}>
+        {cryptoData.length ? 
         <Routes>
           <Route path="/" element={<Main  cryptoData={cryptoData}   />} />
           <Route path="/searchpage" element={<Search  cryptoData={cryptoData}   />} />
           <Route path="/Settingpage" element={<Settingpage     />} />
 
         </Routes>
+        :<Loading />}
       </div>
 
   );
